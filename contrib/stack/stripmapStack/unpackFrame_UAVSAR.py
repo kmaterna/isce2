@@ -14,9 +14,9 @@ def cmdLineParse():
     Command line parser.
     '''
 
-    parser = argparse.ArgumentParser(description='Unpack CSK SLC data and store metadata in pickle file.')
+    parser = argparse.ArgumentParser(description='Unpack UAVSAR SLC data and store metadata in pickle file.')
     parser.add_argument('-i','--input', dest='h5dir', type=str,
-            required=True, help='Input CSK directory')
+            required=True, help='Input UAVSAR directory')
     parser.add_argument('-d','--dop_file', dest='dopFile', type=str,
             default=None, help='Doppler file')
     parser.add_argument('-o', '--output', dest='slcdir', type=str,
